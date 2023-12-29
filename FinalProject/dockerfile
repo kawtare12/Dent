@@ -1,0 +1,5 @@
+FROM openjdk:17-jdk-alpine
+WORKDIR /backend
+COPY target/tooth.jar .
+EXPOSE 8083
+ENTRYPOINT ["java", "-jar","tooth.jar"]
